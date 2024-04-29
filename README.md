@@ -6,7 +6,12 @@ This repo was created to replicate the issue with Next.js route interception wor
 
 ## Getting Started
 
-First, run the the project in dev mode:
+First, install node modules:
+```bash
+npm i
+```
+
+Then run the the project in dev mode:
 
 ```bash
 npm run dev
