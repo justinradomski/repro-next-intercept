@@ -1,9 +1,7 @@
 import Link from "next/link";
-import {unstable_setRequestLocale} from "next-intl/server";
 
-export default function TestPage({params: {locale}}: {params: {locale: string}}) {
+export default function TestPage() {
 
-    unstable_setRequestLocale(locale)
     return (
         <div>
             <h1>Test Page</h1>

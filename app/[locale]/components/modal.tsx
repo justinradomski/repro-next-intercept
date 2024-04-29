@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default function Modal(props: { children: React.ReactNode }) {
     return (
