@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { unstable_setRequestLocale } from 'next-intl/server'
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -10,13 +11,22 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+  children, modal
+}: {
   children: React.ReactNode;
-}>) {
+  modal: React.ReactNode
+}) {
+
+    unstable_setRequestLocale('en')
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      {children}
+
+      <br/>
+      <br/>
+      {modal}
+      </body>
     </html>
   );
 }
