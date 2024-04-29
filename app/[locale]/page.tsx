@@ -5,9 +5,9 @@ export default function Home({params: {locale}}: {params: {locale: string}}) {
         <div>
             <h1>Home Page</h1>
             <br/>
-            <Link href={`/${locale}/item/123`}>Item link</Link>
+            <Link href={`/${locale}/interception/123`}>Interception link</Link>
             <br/>
-            <Link href={`/${locale}/test`}>Test link</Link>
+            <Link href={`/${locale}/no-interception/123`}>No interception link</Link>
         </div>
     );
 }

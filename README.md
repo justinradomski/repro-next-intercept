@@ -18,7 +18,7 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the demo.
-Click the 'Item link' to see the modal.
+Click the 'Interception link' to see the modal.
 
 Now run the project in production mode:
 
@@ -27,4 +27,4 @@ npm run build
 npm start
 ``` 
 
-Item link modal should now longer be working.
+Interception link modal should now longer be working.
