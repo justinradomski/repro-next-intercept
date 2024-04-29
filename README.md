@@ -19,7 +19,7 @@ Now run the project in production mode:
 
 ```bash
 npm run build
-npm run start
+npm start
 ```
 
 Item link modal should now longer be working.

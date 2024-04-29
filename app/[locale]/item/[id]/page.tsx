@@ -1,9 +1,9 @@
 import Link from "next/link";
 import {unstable_setRequestLocale} from "next-intl/server";
 
-export default function ItemPage({params: {id}}: { params: { id: string } }) {
+export default function ItemPage({params: {id, locale}}: { params: { id: string, locale:string } }) {
 
-    unstable_setRequestLocale('en')
+    unstable_setRequestLocale(locale)
     return (
         <div>
             <h1>Item Page</h1>
