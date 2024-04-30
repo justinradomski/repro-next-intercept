@@ -1,7 +1,16 @@
 
 export default function Modal(props: { children: React.ReactNode }) {
     return (
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-black border-2 border-solid">
+        <div
+            style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                border: '2px solid black',
+                padding: '10px'
+            }}
+        >
             {props.children}
 
             <a href="/">close</a>

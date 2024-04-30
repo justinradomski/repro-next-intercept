@@ -1,4 +1,4 @@
-import Modal from "@/app/[locale]/components/modal";
+import Modal from "../../../components/modal";
 
 export default function ModalPage({params: {id}}: { params: { id: string } }) {
     return (
