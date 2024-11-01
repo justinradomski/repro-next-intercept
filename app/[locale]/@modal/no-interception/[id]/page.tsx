@@ -1,6 +1,12 @@
 import Modal from "../../../components/modal";
 
-export default function ModalPage({params: {id}}: { params: { id: string } }) {
+export default async function ModalPage(props: { params: Promise<{ id: string }> }) {
+    const params = await props.params;
+
+    const {
+        id
+    } = params;
+
     return (
         <Modal>
             <h1>Modal for No Interception Page</h1>
